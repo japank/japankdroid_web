@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>JapankDroid - Oprek your device</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+ <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+     <link href="css/mainsearch.css" rel="stylesheet" />
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" style="background-color:transparent; ">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger"  style="color: white;" href="#page-top">Japank_Droid</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" style="background-color: white;" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger"  style="color: white;" href="index.html">Home</a>
+          </li>
+           <li class="dropdown nav-item">
+            <a  class="dropdown-toggle nav-link"  style="color: white;" data-toggle="dropdown" href="#">Project
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" style="width: 60px; margin-left: -40px; background-color: #080808;" >
+              <center>
+              <li><a href="project.html" style="color: white; font-weight: bold" >Tutorial</a></li>
+              <li><a href="project2.html" style="color:white;font-weight: bold">Custom Rom</a></li>
+            </center></ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger"  style="color: white;" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger"  style="color: white;" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold" style="font-size: 100px;text-shadow: 3px 3px 3px black;">JAPANK_droid</h1>
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light mb-5"style="text-shadow: 3px 2px 1px black;">kalo bisa ngoprek sendiri, ngapain harus ke konter?<br>Tempat ngoprek Redmi 4x mu ya cuma disini gays</p>
+         
+
+    <div style="margin-left: 325px;" class="s128">
+      <form>
+        <div class="inner-form">
+          <div class="row">
+            <div class="input-field first" id="first">
+              <input class="input" id="inputFocus" type="text" placeholder="Keyword" />
+              <button class="clear" id="clear">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  <!-- Footer -->
+  <footer class="bg-transparent py-3" style="height: 50px;">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright &copy; 2021 - Japank Corporate</div>
+    </div>
+  </footer>
+
+        </div>
+      </div>
+    </div>
+ 
+
+
+</header>
+  <script>
+       var btnDelete = document.getElementById('clear');
+      var inputFocus = document.getElementById('inputFocus');
+      //- btnDelete.on('click', function(e) {
+      //-   e.preventDefault();
+      //-   inputFocus.classList.add('isFocus')
+      //- })
+      //- inputFocus.addEventListener('click', function() {
+      //-   this.classList.add('isFocus')
+      //- })
+      btnDelete.addEventListener('click', function(e)
+      {
+        e.preventDefault();
+        inputFocus.value = ''
+      })
+      document.addEventListener('click', function(e)
+      {
+        if (document.getElementById('first').contains(e.target))
+        {
+          inputFocus.classList.add('isFocus')
+        }
+        else
+        {
+          // Clicked outside the box
+          inputFocus.classList.remove('isFocus')
+        }
+      });
+
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
